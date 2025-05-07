@@ -1,0 +1,323 @@
+/* Reset de base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif; /* Police classique */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Gris très clair */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: #555; /* Gris moyen */
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #777;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: normal;
+}
+
+/* Navigation */
+nav {
+    background-color: #ddd; /* Gris clair */
+    padding: 0.8em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+nav .table {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1.5em;
+}
+
+nav li a {
+    display: block;
+    padding: 0.5em 0.8em;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover,
+nav li a:focus {
+    color: #007bff; /* Bleu classique pour les liens */
+}
+
+/* Section principale (article) */
+article {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+article section {
+    background-color: white;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+article section:last-child {
+    margin-bottom: 0;
+}
+
+article section h1,
+article section h2,
+article section h3 {
+    color: #333;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+article section h1 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+article section h2 {
+    font-size: 1.4em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Section "Qui suis-je ?" */
+.Etude .sec {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.Etude .gauche {
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #ccc;
+    transition: transform 0.3s ease-in-out; /* Ajout de la transition */
+}
+
+.Etude .gauche:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+.Etude .gauche img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Etude .droite p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Section "Parcours et expériences" */
+.contact .sec h2 {
+    margin-bottom: 1.2em;
+}
+
+.contact .parcour > div {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0.8em;
+    margin-bottom: 1.2em;
+    align-items: start;
+}
+
+.contact .gauche {
+    color: #777;
+    font-style: italic;
+    text-align: right;
+}
+
+.contact .droite h3 {
+    margin-top: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact .droite p {
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+/* Section "Compétences et niveau" */
+.contact .sec > .sec { /* Cibler le div .sec imbriqué */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+    margin-top: 1.5em;
+}
+
+.contact .cgauche,
+.contact .cdroite {
+    /* Pas de style spécifique ici, utilisation de la grille */
+}
+
+.contact .sous {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.8em;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    align-items: center;
+}
+
+.contact .sousgauche {
+    font-weight: bold;
+    color: #555;
+}
+
+.contact .sousdroite {
+    text-align: right;
+    color: #777;
+}
+
+.contact .sousgauche pre,
+.contact .sousdroite pre {
+    margin: 0;
+}
+
+/* Section "Recommandations à télécharger" */
+.niveau .sec {
+    text-align: center;
+}
+
+.niveau .reco h2 {
+    margin-bottom: 1em;
+}
+
+.niveau .gauche,
+.niveau .droite {
+    display: inline-block;
+    margin: 0 1em;
+    vertical-align: middle;
+}
+
+.niveau .gauche a,
+.niveau .droite a {
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+.niveau .gauche img {
+    width: 50px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.niveau .gauche img:hover {
+    transform: scale(1.2);
+}
+
+.niveau .droite p {
+    margin: 0.3em 0;
+    color: #555;
+}
+
+/* Pied de page */
+footer {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    border-top: 1px solid #777;
+}
+
+footer strong {
+    font-weight: bold;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0.3em 0;
+    }
+
+    nav li a {
+        padding: 0.4em 0.6em;
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .Etude .sec {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Etude .gauche {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 0.8em;
+    }
+
+    .contact .sec > .sec {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .parcour > div {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .contact .gauche {
+        text-align: left;
+        margin-bottom: 0.3em;
+    }
+
+    .niveau .gauche,
+    .niveau .droite {
+        display: block;
+        margin: 0.8em 0;
+    }
+}

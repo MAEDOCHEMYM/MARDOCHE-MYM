@@ -1,0 +1,59 @@
+
+* {
+    box-sizing: border-box; /* Pour inclure le padding et la bordure dans la largeur totale */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    width: 60vw; /* Largeur relative (60% de la largeur de la fenêtre) */
+    height: 40vw; /* Hauteur calculée pour maintenir le ratio 3:2 */
+    max-width: 900px; /* Largeur maximale */
+    max-height: 600px; /* Hauteur maximale */
+    background-color: #f0f0f0; /* Couleur de fond */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Centrer horizontalement */
+}
+ body {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3d7e2a;}
+fieldset {
+    width: 900px; /* Ajuste la largeur selon tes besoins */
+    padding: 70px; /* Ajoute du remplissage à l'intérieur */
+    border: 0px solid #ffffff; /* Change la bordure si nécessaire */
+    background-color: white;
+}
+input {
+    width: 100%; /* Prend toute la largeur du fieldset */
+    padding: 20px; /* Ajoute du remplissage à l'intérieur du champ */
+    font-size: 16px; /* Augmente la taille de la police */
+    
+}
+h1{
+    font-size: 50px;
+    color: black;
+    font-family:'century Gothic',calibri,serif;
+    text-align: center;}
+label{
+    font-size: 20px;
+    color: black;
+    font-family:'century Gothic',calibri,serif;
+}
+.mot{background: #3d7e2a;
+  font-family:'century Gothic',calibri,serif;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  border: 2px solid black ;
+  
+}

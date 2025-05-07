@@ -1,0 +1,108 @@
+<?php
+$connexion=mysql_connect('localhost','root',") OR die ('Erreur de connexion');
+mysql_select_db('inscription') OR die('Erreur de selection de la base');
+$nom=$_post('nom');
+$postnom=$_post('postnom');
+$prenom=$_post_('prenom');
+$formation=$_post('formation');
+$adresseemail=$_post('adresseemail');
+$sql=INSERT INTO etudiant('nom','postnom','prenom','formation','adresseemail')
+ VALUES ('$nom','$postnom','$prenom','$formation','$adresseemail');
+if($connexion=query($sql===TRUE){
+    echo "succés";
+}
+else|{
+    echo "Erreur".sql.<br>
+$connexion=Erreur;
+}
+$connnexion=close();
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription d'utilisateur</title>
+    <link rel="stylesheet" href="Inscription.css">
+</head>
+<body>
+    <section class="groupe">
+    <div class="container">
+    <div class="gauche">
+        <img src="logo.png" alt="image du logo" width="200" height="200">
+    <pre><h2 class="ab">Cours</h2><h2 class="abr">d'Eté</h2><h2 class="abre">sur le Logiciels</h2><h2 class="abrev">Informatique</h2> </pre>
+    </div>
+    <div class="droite">
+  <p>Formulaire d'inscription </p>
+  <form action"" method="post">  
+                <table >
+                    <tr>
+          <th> <h3>IDENTITÉ</h3></th>
+          <th><h3>FRMATION</h3></th>
+          </tr>
+          <tr>
+              <td>
+           <label>Nom: </label> 
+           <input type="text" name="nom">
+           </td>
+           <td>
+                <label >Choisissez votre formation</label>
+            <input type="ratio">
+           </td>
+           </tr>
+           <tr>
+               <td>
+                    <label>PostNom: </label>
+           <input type="text" nom="postnom">
+               </td>
+               <td>
+                     <label >Mentionnez votre niveau :</label>
+            <input type="ratio">
+               </td>
+           </tr>
+          <tr>
+              <td>
+                  <label >Prénom : </label>
+           <input type="text" nom="prenom">
+              </td>
+              <td>
+                   <label>Numéro téléphonique ou adresse mail :</label>
+          <input type="email" name="adresse">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                     
+           <label>sexe</label>
+           <input type="radio" value="Homme">
+<label for="masculin">Homme</label>
+<input type="radio" value="Femme">
+<label for="feminin">Femme</label>
+
+           
+              </td>
+              <td>
+                   <label>Un message : </label>
+            <input type="text">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                   <label>Date de naissance : </label> 
+          <input type="date">
+              </td>
+              <td>
+                    <label>Adresse Physique :</label>
+          <input type="text">
+              </td>
+          </tr>
+       
+            
+            </table>
+           </div>
+    </div>
+   
+    <input class="mot" type="submit">
+    </section>
+</form>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.container {
+    display: flex; /* Utilisation du flexbox */
+}
+.gauche {
+    background-color: #2b3356; /* Couleur de fond pour la colonne gauche */
+}
+.droite {
+    background-color:  #2b3356; /* Couleur de fond pour la colonne droite */
+}
+* {
+    box-sizing: border-box; /* Pour inclure le padding et la bordure dans la largeur totale */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #828277;
+}
+
+.droite1{
+    padding: 30px;
+}
+body {
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut */
+}
+.contenu {
+    text-align: center; /* Centre le texte à l'intérieur du conteneur */
+}
+label{
+    font-size: 15px;
+    color: white;
+    font-family:'century Gothic',calibri,serif;
+    font-weight: bold;
+}
+input {
+    width: 100%; /* Prend toute la largeur du fieldset */
+    padding: 10px; /* Ajoute du remplissage à l'intérieur du champ */
+    font-size: 10px; /* Augmente la taille de la police */    
+}
+.groupe{
+    border: 1px solid #ccc; /* Bordure autour du groupe */
+    padding: 20px; /* Espacement intérieur */
+    margin: 20px; /* Espacement extérieur */
+    background-color: #2b3356; /* Couleur de fond */
+}
+p{
+    color: white;
+    font-family:'century Gothic',calibri,serif;
+    text-align: right;
+    font-weight: bold;
+    font-size: 25px;
+}
+h3{
+     color: #e35d13dc;
+    font-family:'century Gothic',calibri,serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.ab{
+    color: #408cff;
+    font-family:'century Gothic',calibri,serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.abr{
+    color: #ffdc2b;
+    font-family:'century Gothic',calibri,serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.abre{
+    color: #ff4900;
+    font-family:'century Gothic',calibri,serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 40px;
+}
+.abrev{
+    color: #ffdc2b;
+    font-family:'century Gothic',calibri,serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 40px;
+}
+.mot{background: #e35d13dc;
+  font-family:'century Gothic',calibri,serif;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  border: 2px solid black ;
+  
+}

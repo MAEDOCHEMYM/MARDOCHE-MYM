@@ -1,0 +1,9 @@
+[Xdebug]
+zend_extension="C:
+\wamp64\bin\php.5.5.12\ext\php_xdebug.dll";
+Xdebug.remote_enable=1
+Xdebug.remote_host=127.0.0.1
+Xdebug.remote_port=9000
+Xdebug.remote_autostart=1
+
+
